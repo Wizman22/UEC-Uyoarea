@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - UECUyoarea</title>
+    <style>
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background-color: #E2F3E4;
+}
+
+a{
+  color: #fff;
+}
+
+a::hover{
+  color:blue;
+}
+
+a::active{
+  color:red;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(30, 100, 60, 1);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 999;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#identity {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.name {
+  padding-left: 10px;
+}
+
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 15px;
+  margin-right: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar ul li a:hover {
+  color: hsla(230, 100%, 51%, 1);
+}
+
+.container {
+    max-width: 800px;
+    margin: 110px auto;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(20, 0, 20, 0.1);
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: #fff;
+    background-color: red;
+    text-align: center;
+    Margin: 20px 0 0 0;
+    text-justify: center;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    display: inline-block;
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: grab;
+}
+
+.contact-form button:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+footer {
+  background-color: hsla(211, 24%, 17%, 1);
+  color: #fff;
+  padding-top: 20px;
+  height: auto;
+}
+
+footer ul li{
+  list-style-type: circle;
+  list-style-position: inside;
+}
+#main-footer {
+  height: auto;
+  width: 100%;
+  margin: 20px 20px 20px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.left, .right {
+  flex: 1 1 300px;
+}
+
+.top, .mid, .bottom{
+  margin-bottom: 20px;
+}
+
+#sub-footer {
+  width: 100%;
+  min-height: 80px;
+  background-color: #000;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  align-content: center;
+}
+
+</style>
+--->
+</head>
+
+<body>
+    
+    <header>
+                <div id="identity">
+                        <div class="logo">
+                           <img src="Images/logo.png" alt="" />
+                        </div>
+                        <div class="name">
+                           <h5>UNITED EVANGELICAL CHURCH</h5>
+                            <p>Uyo Area Conference</p>
+                        </div>
+                </div>
+                
+                <div class="navbar">
+                        <ul>
+                                <li> <a href="Index.html">Home</a>
+                                </li>
+                                <li> <a href="History.html"> History</a>
+                                </li>
+                                <li> <a href="Contact.html">Contact Us</a>
+                                </li>
+                                <li> <a href="Give.html">Give</a>
+                                </li>
+                        </ul>
+                </div>
+        </header>
+    
+    <div class="container">
+ <div>     
+	<h1>Contact Us</h1>
+        <p>We’d love to hear from you! Whether you’re looking to start a new project, have questions about our services, or need a consultation, feel free to get in touch.</p>
+</div>
+
+<div>   
+	<h2>Get In Touch</h2>
+        <p><strong>Phone:</strong> (+234) 705 215 3832</p>
+        <p><strong>Email:</strong>info.uecuyoarea@gmail.com</p>
+        <p><strong>Office Address:</strong> IBB Avenue, Opposite Avenue of Hope Uyo, AKS</p>
+</div>
+
+<div>    
+	<h2>Working Hours</h2>
+        <p><strong>Monday - Friday:</strong> 8:00 AM - 6:00 PM</p>
+        <p><strong>Saturday:</strong> 9:00 AM - 3:00 PM</p>
+        <p><strong>Sunday:</strong> Closed</p>
+</div> 
+
+<div id="form">        
+	<h2>Contact Form</h2>
+        <form class="contact-form" action="submit_form.php" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+</div>      
+    </div>
+    
+    <footer>
+        <div id="main-footer">
+                <div class="left">
+                   <div class="top">
+                     <h3>MISSION/VISION</h3>
+                     <p> The church exists to glorify God and reach the unreached for Christ through evangelism and missions, equipping and empowering the saints and social action for the benefit of mankind. </p>   
+                     <p>We are a purposeful Bible-based Church united in worship and service to God and humanity, holistically towards the rapture.</p>
+                   </div>
+                   
+                   <div class="mid">
+                      <h3>THE CHURCH</h3>
+                      <p>United Evangelical Church, Uyo Area Conference. <br> <strong>Address:</strong> 263 Aka Road, Uyo.</p>
+                   </div>
+                   
+                   <div class="bottom">
+                      <h3>UNITS</h3>
+                      <ul>
+                              <li> Uyo Superintendency
+                              </li>
+                              <li> Mbiabong Etoi Superintendency
+                                </li>
+                              <li> Anua Superintendency
+                              </li>
+                              <li> Ikot Oku Nsit Superintendency
+                              </li>
+                              <li>Edebom Superintendency
+                              </li>
+                              <li> Ibedu Autonomous Superintendency
+                              </li>
+                      </ul>
+                   </div>
+                </div>
+                
+                <div class="right">
+                        <div class="top">
+                          <h3>ABOUT</h3>
+                          <ul>
+                                <li> <a href=""> History of the Church</a>
+                                </li>
+
+                                <li> <a href="Index2.html">Church Organ</a>
+                                </li>
+                          </ul>
+                        </div>
+                        
+                        <div class="mid">
+                           <h3>WORSHIP TIMES</h3>
+                           <p> <em>Service time differs from branch to branch </em> </p>
+                           <ul>
+                                <li>Sunday School:  8am</li>
+                                <li>Sunday Church Service:  9am</li>
+                                <li>Wednesday Bible Study:  5pm</li>
+                                <li>Prayer meeting (varies based on congregation)</li>
+                           </ul>
+                        </div>
+                        
+                        <div class="bottom">
+                                <div class="">
+                                  <h3>CONTACT</h3>
+                                  <ul>
+                                        <li>+234-812-345-678</li>
+                                        <li>info.uecuyoarea@gmail.com</li>
+                                  </ul>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        
+        <div id="sub-footer">
+                <p>Copyright &copy 2025 UEC Uyo Area Conference. All rights reserved.</p>
+        </div>
+</footer>
+</body>
+</html>

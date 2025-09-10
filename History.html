@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+  <style>
+      *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    html, body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+    
+    a{
+      color: #fff;
+    }
+    
+    a::hover{
+      color:blue;
+    }
+    
+    a::active{
+      color:red;
+    }
+    
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background-color: rgba(30, 100, 60, 1);
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      z-index: 999;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+    
+    #identity {
+      display: flex;
+      align-items: center;
+    }
+    
+    .logo {
+      width: 100px;
+      height: 100px;
+    }
+    
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    
+    .name {
+      padding-left: 10px;
+    }
+    
+    .navbar ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      gap: 15px;
+      margin-right: 20px;
+    }
+    
+    .navbar ul li a {
+      text-decoration: none;
+      color: #fff;
+    }
+    
+    .navbar ul li a:hover {
+      color: hsla(230, 100%, 51%, 1);
+    }
+  
+    .catalogue{
+      max-height: 400px;
+      width: 100%;
+      margin: 150px 40px 0 20px;
+      display: flex;
+      justify-content: space-between;
+      flex: 1 1 200px;
+    }
+
+    .xbox{
+      height: auto;
+       border: 5px solid darkolivegreen;
+       border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+      object-fit: contain;
+      margin-right: 20px;
+    }
+
+    .xbox img{
+     height: 100%;
+     width: 100%;
+    }
+
+    .container {
+      height: auto;
+      width: auto;
+      margin: 100px 50px;
+    }
+    
+    .tab{
+      width: auto;
+      padding: 10px;
+    }
+    
+     
+        /* Footer */
+    footer {
+      background-color: hsla(211, 24%, 17%, 1);
+      color: #fff;
+      padding-top: 20px;
+      height: auto;
+    }
+    
+    footer ul li{
+      list-style-type: circle;
+      list-style-position: inside;
+    }
+    #main-footer {
+      height: auto;
+      width: 100%;
+      margin: 20px 20px 20px 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+    }
+    
+    .left, .right {
+      flex: 1 1 300px;
+    }
+    
+    .right a{
+      font-weight: bold;
+      font-style:  italic;
+      text-decoration-color: #FF5C00;
+      
+    }
+    .top, .mid, .bottom{
+      margin-bottom: 20px;
+    }
+    
+    
+    #sub-footer {
+      width: 100%;
+      min-height: 80px;
+      background-color: #000;
+      text-align: center;
+      margin: 0;
+      padding: 10px;
+      align-content: center;
+    }
+
+
+    /* mobile responsiveness */
+@media (max-width:768px){
+  header{
+    flex-direction: column;
+    
+  }
+
+  #identity{
+    width: 100%;
+    justify-content: start;
+  }
+
+  .navbar{
+    display: none;
+  }
+
+  </style>
+</head>
+
+<body>
+    <header>
+          <div id="identity">
+                        <div class="logo">
+                           <img src="Images/logo.png" alt="" />
+                        </div>
+                        <div class="name">
+                           <h5>UNITED EVANGELICAL CHURCH</h5>
+                            <p>Uyo Area Conference</p>
+                        </div>
+          </div>
+                
+          <div class="navbar">
+                        <ul>
+                                <li> <a href="Index.html">Home</a>
+                                </li>
+                                <li> <a href="History.html"> History</a>
+                                </li>
+                                <li> <a href="Contact.html">Contact Us</a>
+                                </li>
+                                <li> <a href="Give.html">Give</a>
+                                </li>
+                        </ul>
+          </div>
+    </header>
+
+    <div class="catalogue">
+      <div class="xbox">
+        <img src="Images/silhouettes.jpg" alt=""></div>
+      <div class="xbox">
+         <img src="Images/refil.jpg" alt="">
+      </div>
+     <div class="xbox">
+       <img src="Images/sing.jpg" alt="">
+     </div>
+      <div class="xbox">
+        <img src="Images/bibles.jpg" alt="">
+      </div>
+    </div>  
+
+
+    <div class="container">
+      <div class="tab">
+        <h2>HISTORY OF THE CHURCH (1st 100 years)</h2>
+          <p> 1863: Samuel Bill born on January 10.
+1887: Samuel Bill sailed for Nigeria on September 14. Arrived in Calabar, Nigeria, on October 6.
+1888: Archie Baillie joined Samuel Bill in Ibeno, Qua Iboe. Missionary Association formed in Belfast on November 12.
+1890: First Holy Communion Service held with two African Christians present. Samuel Bill and Grace Kerr married on October 14 in Mountpottinger Presbyterian Church, Belfast. Foundation of Qua Iboe Mission Council on November 7.
+1894: Mr. and Mrs. Baillie began missionary work at Okat.
+1898: Mr. John Kirk and Stephen Equalo, an Ibeno teacher, took up residence in Etinan.
+1900: First Baptism in Etinan. David Ekong ordained first Qua Iboe Church Pastor.
+1902: Mr. R. L. Mackeown appointed as first full-time General Secretary.
+1903: Mission Office moved to Scottish Provident Building, Belfast, from a smaller office in YMCA building.
+1904: Mr. and Mrs. Heaney began missionary work at Ikot Ubo. Training Institute, where a number of pastors received their education, opened in Okat by Miss Gordon.
+1905: Mr. W. Eakin moved to Ikot Ubo. He saw many outstations opened.
+1906: Mission outstations opened at Inuoko, Atiamkpat, and Mbioto. Mr. R. W. Smith began his mission work. Training Institute for Girls Cottage Institute opened at Okat.
+1907: Eket station established.
+1909: Mr. R. W. Smith moved to Ikot Edong to open a mission field. Mr. J. W. Westgarth moved to Aka, Uyo, to open a new mission field. Mrs. Westgarth died and was buried in Etinan.
+1915: Mr. J. Nelson began mission work in Ika Annang. Mr. J. J. Taylor began the Training Institute in Etinan.
+1917: Mr. A. V. Wilcox opened a mission field at Aba.
+1918: Mr. W. Eakin died in Nigeria.
+1920: The Girls’ Institute opened in Afaha Eket.
+1921: Mr. W. L. Wheatley began his missionary work among the Igbo people.
+1922: Mr. Wilcox died in Nigeria.
+1926: Mr. and Mrs. McEwan began missionary work in Ibesit.
+1927: Etinan Hospital was established as a medical center.
+1931: Mr. Stanley Benington opened the Qua Iboe Mission Field in Lobi Land, French West Africa (now Burkina Faso). Mr. D. O’Neil began missionary work in Igala. Pastor David Ekong died on March 17.
+1932: Mr. and Mrs. Dickson began missionary work in Adoru.
+1933: The Qua Iboe Church Leprosy Hospital, Ekpene Obom, was opened. Mrs. Grace Bill was called to be with the Lord on August 12.
+1936: Mr. and Mrs. John Curry began missionary work in Bassa.
+1941: Official opening of Qua Iboe Church Bible College (now Samuel Bill Theological College), Abak, on January 8.
+1942: Mr. R. L. Mckeown was called home by the Lord on January 24. Mr. R. L. Mckeown was to be with the Lord on March 11.
+1949: The opening of Ochadamu Medical Centre.
+1960: Qua Iboe Church Bible College (now Peter Achimugu College of Theology), Ankpa, began its training in Ministry.
+1974: Mr. H. W. Dickson began missionary work in the then Bendel State.
+1984: Qua Iboe Mission changed its name to Qua Iboe Church on May 1.
+1987: Centenary Celebration.</p>
+          
+        </div>
+      
+      <div class="tab">
+          <h2>ADMINISTRATION OF THE CHURCH</h2>
+        <P> At the National level, the Church is administered by a National Conference, which meets at least once a year, at an approved venue, made up of accredited representation of all the component Area Conferences, Township Superintendencies, and Districts.
+
+          This Conference is served by a Council, which performs advisory functions, and a Standing Committee, which performs executive functions. The National Conference is also served by other Committees, including the Ministry Committee, the Posting Committee, the Education Committee, etc.
+
+          The administration of Area Conferences follows a similar pattern. The Township Superintendencies and Districts and regular Superintendencies are administered by their respective Elders Central Sessions.</p>
+          
+        </div>
+      </div>
+    
+
+      <footer>
+        <div id="main-footer">
+                <div class="left">
+                   <div class="top">
+                     <h3>MISSION/VISION</h3>
+                     <p> The church exists to glorify God and reach the unreached for Christ through evangelism and missions, equipping and empowering the saints and social action for the benefit of mankind. </p>   
+                     <p>We are a purposeful Bible-based Church united in worship and service to God and humanity, holistically towards the rapture.</p>
+                   </div>
+                   
+                   <div class="mid">
+                      <h3>THE CHURCH</h3>
+                      <p>United Evangelical Church, Uyo Area Conference. <br> <strong>Address:</strong> 263 Aka Road, Uyo.</p>
+                   </div>
+                   
+                   <div class="bottom">
+                      <h3>UNITS</h3>
+                      <ul>
+                              <li> Uyo Superintendency
+                              </li>
+                              <li> Mbiabong Etoi Superintendency
+                                </li>
+                              <li> Anua Superintendency
+                              </li>
+                              <li> Ikot Oku Nsit Superintendency
+                              </li>
+                              <li>Edebom Superintendency
+                              </li>
+                              <li> Ibedu Autonomous Superintendency
+                              </li>
+                      </ul>
+                   </div>
+                </div>
+                
+                <div class="right">
+                        <div class="top">
+                          <h3>ABOUT</h3>
+                          <ul>
+                                 <li> <a href="Index.html">Home</a>
+                                </li>
+
+                                <li> <a href="History.html"> History of the Church</a>
+                                </li>
+
+                                <li> <a href="Contact.html">Contact Us</a>
+                                </li>
+
+                                <li> <a href="Give.html">Give</a>
+                                </li>
+
+                                <li> <a href="Index2.html">Church Organisation</a>
+                                </li>
+                          </ul>
+                        </div>
+                        
+                        <div class="mid">
+                           <h3>WORSHIP TIMES</h3>
+                           <p> <em>Service time differs from branch to branch </em> </p>
+                           <ul>
+                                <li>Sunday School:  8am</li>
+                                <li>Sunday Church Service:  9am</li>
+                                <li>Wednesday Bible Study:  5pm</li>
+                                <li>Prayer meeting (varies based on congregation)</li>
+                           </ul>
+                        </div>
+                        
+                        <div class="bottom">
+                                <div class="contact-info">
+                                  <h3>CONTACT</h3>
+                                  <ul>
+                                        <li>+234-812-345-678</li>
+                                        <li>info.uecuyoarea@gmail.com</li>
+                                  </ul>
+                                </div>
+                        </div>
+                        <a href="#top"> Back to top!</a>
+                </div>
+        </div>
+        
+        <div id="sub-footer">
+                <p>Copyright &copy 2025 UEC Uyo Area Conference. All rights reserved.</p>
+        </div>
+</footer>
+
+</body>
+</html>
