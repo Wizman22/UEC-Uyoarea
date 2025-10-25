@@ -82,8 +82,7 @@ header {
 }
 
 #landing {
-  /* background-image: url(Images/worship.jpg) */
-  background-image: url("Images/worship.jpg");
+  background-image: url("/Images/worship.jpg");
  height: 800px; 
   width: 100%;
   padding-top: 100px; /* to offset the fixed header */
@@ -125,12 +124,10 @@ header {
   max-width: 800px;
   margin: 0 auto;
   font-size: 20px;
-
 }
 
 .article h1{
   align-self: center;
-
 }
 
 #sidebar {
@@ -171,7 +168,6 @@ header {
   background-repeat: no-repeat;
   box-shadow: 10px 3px 8px rgba(0, 0, 0, 0.8);
 }
-
  
 .box {
   max-width: 1500px;
@@ -238,6 +234,7 @@ footer ul li{
   list-style-type: circle;
   list-style-position: inside;
 }
+
 #main-footer {
   height: auto;
   width: 100%;
@@ -256,12 +253,11 @@ footer ul li{
   font-weight: bold;
   font-style:  italic;
   text-decoration-color: #FF5C00;
-  
 }
+
 .top, .mid, .bottom{
   margin-bottom: 20px;
 }
-
 
 #sub-footer {
   width: 100%;
